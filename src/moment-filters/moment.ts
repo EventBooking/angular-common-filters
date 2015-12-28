@@ -1,4 +1,4 @@
-﻿module App.Filters {
+﻿module MomentFiltersModule {
     class MomentFilter {
         filter(date, format, pattern) {
             if (date == null)

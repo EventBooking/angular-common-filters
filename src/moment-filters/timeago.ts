@@ -1,4 +1,5 @@
-﻿module App.Filters {
+﻿/// <reference path="filters.ts"/>
+module MomentFiltersModule {
     export interface ITimeAgoFilter {
         filter(date: any): string
     }

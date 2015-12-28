@@ -1,7 +1,7 @@
 {
-  "name": "angular-moment-filters",
+  "name": "angular-common-filters",
   "version": "0.0.0",
-  "homepage": "https://github.com/EventBooking/angular-moment-filters",
+  "homepage": "https://github.com/EventBooking/angular-common-filters",
   "authors": [
     "Mike Walters <mike@eventbooking.com>"
   ],
@@ -17,6 +17,13 @@
     "tests"
   ],
   "dependencies": {
-    "moment": "~2.10.6"
+    "moment": "~2.10.6",
+    "accounting.js": "~0.4.1",
+    "currency-symbol.js": "~1.0.0",
+    "angular": "~1.4.8",
+    "jquery": "~2.1.4",
+    "twix": "~0.8.1"
+  },
+  "devDependencies": {
   }
 }

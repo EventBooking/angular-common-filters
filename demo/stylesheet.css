@@ -1,0 +1,7 @@
+body {
+    display: flex;
+}
+
+.filter-tests {
+    padding: 0 20px;
+}

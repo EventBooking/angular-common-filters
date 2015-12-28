@@ -1,0 +1,52 @@
+<html ng-app="demo">
+
+	<head>
+		<base href="/"/>
+        <title>Layout Page Demo</title>
+		<link rel="stylesheet" href="demo/stylesheet.css" />
+	</head>
+	
+	<body ng-controller="testcontroller as vm">
+        <div class="filter-tests">
+            <h2>Moment Filters</h2>
+            
+            <h3>value | moment: 'L'</h3>
+            <div>Null: {{ null | moment: 'L' }}</div>
+            <div>Date: {{ vm.now | moment: 'L' }}</div>
+            <div>Time: {{ vm.now | moment: 'LT' }}</div>
+            <div>DateTime: {{ vm.now | moment: 'lll' }}</div>
+            
+            <h3>start | daterange: end</h3>
+            <div>Range: {{vm.start | daterange: vm.end}}</div>
+            <div>All Day: {{vm.start | daterange: vm.end: { allDay: true } }}</div>
+            
+            <h3>value | daysago</h3>
+            <div>more than 1: {{vm.lastWeek | daysago}}</div>
+            <div>today: {{vm.now | daysago}}</div>
+            
+            <h3>value | timeago</h3>
+            <div>hours: {{vm.hoursAgo | timeago}}</div>
+            <div>days: {{vm.daysAgo | timeago}}</div>
+        </div>
+        <div class="filter-tests">
+            <h2>Money Filters</h2>
+            
+            <h3>value | money</h3>
+            <div>decimal (default currency): {{vm.decimalMoney | money}}</div>
+            <div>decimal with code: {{vm.decimalMoney | money: vm.codeMoney }}</div>
+            <div>money object: {{vm.moneyObject | money }}</div>
+        </div>
+        
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/moment/moment.js"></script>
+        <script type="text/javascript" src="bower_components/twix/dist/twix.js"></script>
+        <script type="text/javascript" src="bower_components/accounting.js/accounting.js"></script>
+        <script type="text/javascript" src="bower_components/currency-symbol.js/currency.js"></script>
+		<script type="text/javascript" src="dist/angular-moment-filters.js"></script>
+		<script type="text/javascript" src="dist/angular-money-filters.js"></script>
+		<script type="text/javascript" src="demo/app.js"></script>
+        <script type="text/javascript" src="demo/controller.js"></script>
+	</body>
+
+</html>

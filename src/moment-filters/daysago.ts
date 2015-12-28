@@ -1,4 +1,5 @@
-﻿module App.Filters {
+﻿/// <reference path="filters.ts"/>
+module MomentFiltersModule {
     class DaysAgoFilter {
         constructor() {
             this.today = moment().startOf('day');

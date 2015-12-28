@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'tsc:money' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose run-script [ 'pretsc:money', 'tsc:money', 'posttsc:money' ]
+5 info pretsc:money angular-common-filters@1.0.0
+6 info tsc:money angular-common-filters@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info angular-common-filters@1.0.0 Failed to exec tsc:money script
+9 verbose stack Error: angular-common-filters@1.0.0 tsc:money: `tsc -p src/money-filters`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+9 verbose stack     at EventEmitter.emit (events.js:110:17)
+9 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+9 verbose stack     at ChildProcess.emit (events.js:110:17)
+9 verbose stack     at maybeClose (child_process.js:1015:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+10 verbose pkgid angular-common-filters@1.0.0
+11 verbose cwd c:\Users\mike.walters\Documents\GitHub\angular-common-filters
+12 error Windows_NT 6.3.9600
+13 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "tsc:money"
+14 error node v0.12.7
+15 error npm  v2.11.3
+16 error code ELIFECYCLE
+17 error angular-common-filters@1.0.0 tsc:money: `tsc -p src/money-filters`
+17 error Exit status 1
+18 error Failed at the angular-common-filters@1.0.0 tsc:money script 'tsc -p src/money-filters'.
+18 error This is most likely a problem with the angular-common-filters package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     tsc -p src/money-filters
+18 error You can get their info via:
+18 error     npm owner ls angular-common-filters
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
