@@ -1,0 +1,26 @@
+{
+  "name": "angular-moment-filters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EventBooking/angular-moment-filters.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EventBooking/angular-moment-filters/issues"
+  },
+  "homepage": "https://github.com/EventBooking/angular-moment-filters#readme",
+  "devDependencies": {
+    "bower": "^1.7.0",
+    "del": "^2.2.0",
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-debug": "^2.1.2"
+  }
+}

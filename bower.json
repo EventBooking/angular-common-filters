@@ -1,0 +1,22 @@
+{
+  "name": "angular-moment-filters",
+  "version": "0.0.0",
+  "homepage": "https://github.com/EventBooking/angular-moment-filters",
+  "authors": [
+    "Mike Walters <mike@eventbooking.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "~2.10.6"
+  }
+}
