@@ -5,9 +5,6 @@
   "authors": [
     "Mike Walters <mike@eventbooking.com>"
   ],
-  "moduleType": [
-    "globals"
-  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
