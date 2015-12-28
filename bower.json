@@ -1,6 +1,6 @@
 {
   "name": "angular-common-filters",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/EventBooking/angular-common-filters",
   "authors": [
     "Mike Walters <mike@eventbooking.com>"
@@ -14,7 +14,11 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "demo",
+    "src",
+    "gulpfile.js",
+    "package.json"
   ],
   "dependencies": {
     "moment": "~2.10.6",
