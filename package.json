@@ -8,7 +8,7 @@
     "url": "git+https://github.com/EventBooking/angular-common-filters.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/EventBooking/angular-common-filters/issues"
   },

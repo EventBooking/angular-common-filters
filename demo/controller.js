@@ -11,6 +11,14 @@ function testcontroller() {
         amount: 123.45,
         currency: 'EUR'
     }
+    this.moneyObject1k = {
+        amount: 1234.45,
+        currency: 'EUR'
+    }
+    this.moneyObject1m = {
+        amount: 1235678.45,
+        currency: 'EUR'
+    }
 }
 
 angular.module("demo").controller("testcontroller", testcontroller);

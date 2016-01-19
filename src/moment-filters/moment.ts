@@ -1,4 +1,5 @@
-﻿module MomentFiltersModule {
+﻿/// <reference path="filters.ts"/>
+module MomentFiltersModule {
     class MomentFilter {
         filter(date, format, pattern) {
             if (date == null)

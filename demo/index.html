@@ -35,6 +35,8 @@
             <div>decimal (default currency): {{vm.decimalMoney | money}}</div>
             <div>decimal with code: {{vm.decimalMoney | money: vm.codeMoney }}</div>
             <div>money object: {{vm.moneyObject | money }}</div>
+            <div>abbrev K: {{vm.moneyObject1k | money: {abbrev: true} }}</div>
+            <div>abbrev M: {{vm.moneyObject1m | money: {abbrev: true} }}</div>
         </div>
         
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
