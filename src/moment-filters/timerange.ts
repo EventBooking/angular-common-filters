@@ -1,16 +1,17 @@
-﻿/// <reference path="filters.ts"/>
+/// <reference path="filters.ts"/>
 module MomentFiltersModule {
-    export interface IDateRangeFilter {
+    export interface ITimeRangeFilter {
         filter(start: any, end: any, options?: any): string
     }
 
-    class DateRangeFilter implements IDateRangeFilter {
+    class TimeRangeFilter implements ITimeRangeFilter {
         filter(start, end, options) {
             if (start == null)
                 return null;
 
             if (!options) options = {};
-
+            options.hideDate = true;
+            
             var mStart = moment(start);
             var mEnd = moment(end);
             if (mStart.isSame(mEnd))
@@ -20,5 +21,5 @@ module MomentFiltersModule {
         }
     }
 
-    app.filter('daterange', DateRangeFilter);
+    app.filter('timerange', TimeRangeFilter);
 }

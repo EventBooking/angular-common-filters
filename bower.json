@@ -18,12 +18,12 @@
     "package.json"
   ],
   "dependencies": {
-    "moment": "~2.10.6",
-    "accounting.js": "~0.4.1",
-    "currency-symbol.js": "~1.0.0",
-    "angular": "~1.4.8",
-    "jquery": "~2.1.4",
-    "twix": "~0.8.1"
+    "moment": "2.10.6",
+    "accounting.js": "0.4.1",
+    "currency-symbol.js": "1.0.0",
+    "angular": "1.4.8",
+    "jquery": "2.1.4",
+    "twix": "0.9.0"
   },
   "devDependencies": {
   }

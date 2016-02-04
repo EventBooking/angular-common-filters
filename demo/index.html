@@ -19,6 +19,11 @@
             <h3>start | daterange: end</h3>
             <div>Range: {{vm.start | daterange: vm.end}}</div>
             <div>All Day: {{vm.start | daterange: vm.end: { allDay: true } }}</div>
+            <div>Same DateTime: {{vm.start | daterange: vm.start }}</div>
+            
+            <h3>start | timerange: end</h3>
+            <div>Range: {{vm.start | timerange: vm.end}}</div>
+            <div>Same Time: {{vm.start | timerange: vm.start}}</div>
             
             <h3>value | daysago</h3>
             <div>more than 1: {{vm.lastWeek | daysago}}</div>
