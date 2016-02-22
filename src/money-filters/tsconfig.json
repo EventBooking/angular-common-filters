@@ -6,6 +6,6 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "target": "es5",
-    "out": "dist/angular-money-filters.js"
+    "out": "dist/angular-money-filters.debug.js"
   }
 }

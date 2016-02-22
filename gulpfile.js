@@ -17,7 +17,8 @@ gulp.task('typescript', ['tsd:install'], function (callback) {
 });
 
 gulp.task('typescript', typescript);
-
+gulp.task('postMomentTsc', postMomentTsc);
+gulp.task('postMoneyTsc', postMoneyTsc);
 
 function exec(cmd, fn, options) {
     var proc = require('child_process').exec,
@@ -103,4 +104,24 @@ function watch() {
 
 function build() {
     typescript();
+}
+
+function stripRefs(src, dest, name) {
+    var strip = require("gulp-strip-comments");
+
+    return gulp.src(src)
+        .pipe(debug())
+        .pipe(strip())
+        .pipe(concat(name))
+        .pipe(gulp.dest(dest));
+}
+
+function postMomentTsc() {
+    stripRefs(dest + '/angular-moment-filters.debug.d.ts', dest, '/angular-moment-filters.d.ts');
+    stripRefs(dest + '/angular-moment-filters.debug.js', dest, '/angular-moment-filters.js');
+}
+
+function postMoneyTsc() {
+    stripRefs(dest + '/angular-money-filters.debug.d.ts', dest, '/angular-moment-filters.d.ts');
+    stripRefs(dest + '/angular-money-filters.debug.js', dest, '/angular-money-filters.js');
 }

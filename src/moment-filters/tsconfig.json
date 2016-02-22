@@ -6,6 +6,6 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "target": "es5",
-    "out": "dist/angular-moment-filters.js"
+    "out": "dist/angular-moment-filters.debug.js"
   }
 }
