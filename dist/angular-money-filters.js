@@ -114,12 +114,12 @@ var MoneyFiltersModule;
                 options = {};
             if (options.abbrev) {
                 var v = accounting.unformat(value);
-                if (v > 1000) {
+                if (v >= 1000) {
                     value = v / 1000;
                     options.precision = 1;
                     options.format = "%s%vK";
                 }
-                if (v > 1000000) {
+                if (v >= 1000000) {
                     value = v / 1000000;
                     options.precision = 1;
                     options.format = "%s%vM";
